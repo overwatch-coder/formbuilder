@@ -6,17 +6,10 @@
   "scripts": {
     "dev": "nodemon src/index.ts",
     "start": "node dist/index.js",
-    "build": "rimraf dist && tsc",
-    "ts.check": "tsc --project tsconfig.json",
-    "add-build": "git add dist",
+    "build": "tsc",
     "lint": "eslint . --ext .ts",
     "test": "jest"
   },
-  "pre-commit": [
-    "ts.check",
-    "build",
-    "add-build"
-  ],
   "author": "Overwatch Coder",
   "license": "ISC",
   "dependencies": {
